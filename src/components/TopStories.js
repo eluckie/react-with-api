@@ -6,7 +6,8 @@ function TopStories() {
   const [topStories, setTopStories] = useState([]);
 
   useEffect(() => {
-    fetch(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${process.env.REACT_APP_API_KEY}`)
+    // fetch(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${process.env.REACT_APP_API_KEY}`)
+    fetch(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=MhaF1MPY7yfv61cVevpn0tykXPkITyrA`)
       .then(response => {
         if (!response.ok) {
           throw new Error(`${response.status} : ${response.statusText}`);
